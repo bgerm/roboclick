@@ -24,6 +24,7 @@ of the code is stuffed into the AppDelegate.
 ## Screenshots ##
 
 In menu (with "keep repeat clicks to one application" enabled):
+
 ![With pid locking](http://i.imgur.com/ujpmRjC.png)
 
 Preferences:
