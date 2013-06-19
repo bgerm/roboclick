@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C41D524915BB587100FEB329 /* ClickIndicatorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C41D524815BB587100FEB329 /* ClickIndicatorWindow.m */; };
+		C41D524C15BB6E9900FEB329 /* dot.gif in Resources */ = {isa = PBXBuildFile; fileRef = C41D524B15BB6E9900FEB329 /* dot.gif */; };
+		C477DB461580221A00E10B4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C477DB451580221A00E10B4A /* Cocoa.framework */; };
+		C477DB501580221A00E10B4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C477DB4E1580221A00E10B4A /* InfoPlist.strings */; };
+		C477DB521580221A00E10B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C477DB511580221A00E10B4A /* main.m */; };
+		C477DB561580221A00E10B4A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C477DB541580221A00E10B4A /* Credits.rtf */; };
+		C477DB591580221A00E10B4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C477DB581580221A00E10B4A /* AppDelegate.m */; };
+		C477DB5C1580221A00E10B4A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C477DB5A1580221A00E10B4A /* MainMenu.xib */; };
+		C477DB641580221A00E10B4A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C477DB631580221A00E10B4A /* SenTestingKit.framework */; };
+		C477DB651580221A00E10B4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C477DB451580221A00E10B4A /* Cocoa.framework */; };
+		C477DB6D1580221A00E10B4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C477DB6B1580221A00E10B4A /* InfoPlist.strings */; };
+		C477DB701580221A00E10B4A /* RoboClickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C477DB6F1580221A00E10B4A /* RoboClickTests.m */; };
+		C48AD84C15CA1AB800B114BC /* ShortcutRecorder.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = C48AD84B15CA1AB800B114BC /* ShortcutRecorder.framework */; };
+		C48AD84D15CA1B8B00B114BC /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48AD84B15CA1AB800B114BC /* ShortcutRecorder.framework */; };
+		C4928379159F34DF00484DB7 /* Click.m in Sources */ = {isa = PBXBuildFile; fileRef = C4928378159F34DF00484DB7 /* Click.m */; };
+		C492837E159F36CC00484DB7 /* roboclick_on.icns in Resources */ = {isa = PBXBuildFile; fileRef = C492837C159F36CC00484DB7 /* roboclick_on.icns */; };
+		C498F1231583C05B007628D2 /* SGHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = C498F11C1583C05B007628D2 /* SGHotKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C498F1241583C05B007628D2 /* SGHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C498F11E1583C05B007628D2 /* SGHotKeyCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C498F1251583C05B007628D2 /* SGKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = C498F1201583C05B007628D2 /* SGKeyCodeTranslator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C498F1261583C05B007628D2 /* SGKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = C498F1221583C05B007628D2 /* SGKeyCombo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C498F1291583C352007628D2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C498F1281583C352007628D2 /* Carbon.framework */; };
+		C498F12C1583CBFA007628D2 /* SGKeyCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C498F12A1583CBFA007628D2 /* SGKeyCodes.plist */; };
+		C49E46B415BE1E87004204E7 /* ClickIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E46B315BE1E87004204E7 /* ClickIndicatorView.m */; };
+		C49E46B715BE292B004204E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49E46B615BE292A004204E7 /* QuartzCore.framework */; };
+		C4B1F18415BAEF88009F039F /* ProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F18315BAEF88009F039F /* ProcessInfo.m */; };
+		C4D395DC15B1FE320060245F /* status_item_hold_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D395D715B1FE320060245F /* status_item_hold_left.png */; };
+		C4D395DD15B1FE320060245F /* status_item_hold_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D395D815B1FE320060245F /* status_item_hold_right.png */; };
+		C4D395DE15B1FE320060245F /* status_item_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D395D915B1FE320060245F /* status_item_normal.png */; };
+		C4D395DF15B1FE320060245F /* status_item_repeat_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D395DA15B1FE320060245F /* status_item_repeat_left.png */; };
+		C4D395E015B1FE320060245F /* status_item_repeat_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D395DB15B1FE320060245F /* status_item_repeat_right.png */; };
+		C4EEBA5C15A0EC8F002CAC52 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEBA5B15A0EC8F002CAC52 /* StatusItemView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C477DB661580221A00E10B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C477DB381580221900E10B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C477DB401580221900E10B4A;
+			remoteInfo = RoboClick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4BB5E8F15897BE600ACAD8E /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C48AD84C15CA1AB800B114BC /* ShortcutRecorder.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C41D524715BB587100FEB329 /* ClickIndicatorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickIndicatorWindow.h; sourceTree = "<group>"; };
+		C41D524815BB587100FEB329 /* ClickIndicatorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickIndicatorWindow.m; sourceTree = "<group>"; };
+		C41D524B15BB6E9900FEB329 /* dot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dot.gif; sourceTree = "<group>"; };
+		C477DB411580221A00E10B4A /* RoboClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoboClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C477DB451580221A00E10B4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C477DB481580221A00E10B4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C477DB491580221A00E10B4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C477DB4A1580221A00E10B4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C477DB4D1580221A00E10B4A /* RoboClick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoboClick-Info.plist"; sourceTree = "<group>"; };
+		C477DB4F1580221A00E10B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C477DB511580221A00E10B4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C477DB531580221A00E10B4A /* RoboClick-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoboClick-Prefix.pch"; sourceTree = "<group>"; };
+		C477DB551580221A00E10B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C477DB571580221A00E10B4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C477DB581580221A00E10B4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C477DB5B1580221A00E10B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C477DB621580221A00E10B4A /* RoboClickTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoboClickTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C477DB631580221A00E10B4A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C477DB6A1580221A00E10B4A /* RoboClickTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoboClickTests-Info.plist"; sourceTree = "<group>"; };
+		C477DB6C1580221A00E10B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C477DB6E1580221A00E10B4A /* RoboClickTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoboClickTests.h; sourceTree = "<group>"; };
+		C477DB6F1580221A00E10B4A /* RoboClickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoboClickTests.m; sourceTree = "<group>"; };
+		C48AD83C15CA144C00B114BC /* RoboClick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RoboClick.entitlements; sourceTree = "<group>"; };
+		C48AD84B15CA1AB800B114BC /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
+		C4928377159F34DF00484DB7 /* Click.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Click.h; sourceTree = "<group>"; };
+		C4928378159F34DF00484DB7 /* Click.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Click.m; sourceTree = "<group>"; };
+		C492837C159F36CC00484DB7 /* roboclick_on.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = roboclick_on.icns; sourceTree = "<group>"; };
+		C4928384159F54FC00484DB7 /* DLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLog.h; sourceTree = "<group>"; };
+		C498F11B1583C05B007628D2 /* SGHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHotKey.h; sourceTree = "<group>"; };
+		C498F11C1583C05B007628D2 /* SGHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHotKey.m; sourceTree = "<group>"; };
+		C498F11D1583C05B007628D2 /* SGHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHotKeyCenter.h; sourceTree = "<group>"; };
+		C498F11E1583C05B007628D2 /* SGHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHotKeyCenter.m; sourceTree = "<group>"; };
+		C498F11F1583C05B007628D2 /* SGKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGKeyCodeTranslator.h; sourceTree = "<group>"; };
+		C498F1201583C05B007628D2 /* SGKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGKeyCodeTranslator.m; sourceTree = "<group>"; };
+		C498F1211583C05B007628D2 /* SGKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGKeyCombo.h; sourceTree = "<group>"; };
+		C498F1221583C05B007628D2 /* SGKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGKeyCombo.m; sourceTree = "<group>"; };
+		C498F1281583C352007628D2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C498F12B1583CBFA007628D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = RoboClick/en.lproj/SGKeyCodes.plist; sourceTree = SOURCE_ROOT; };
+		C49E46B215BE1E87004204E7 /* ClickIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickIndicatorView.h; sourceTree = "<group>"; };
+		C49E46B315BE1E87004204E7 /* ClickIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickIndicatorView.m; sourceTree = "<group>"; };
+		C49E46B615BE292A004204E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C4B1F18215BAEF88009F039F /* ProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessInfo.h; sourceTree = "<group>"; };
+		C4B1F18315BAEF88009F039F /* ProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessInfo.m; sourceTree = "<group>"; };
+		C4D395D715B1FE320060245F /* status_item_hold_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_item_hold_left.png; sourceTree = "<group>"; };
+		C4D395D815B1FE320060245F /* status_item_hold_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_item_hold_right.png; sourceTree = "<group>"; };
+		C4D395D915B1FE320060245F /* status_item_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_item_normal.png; sourceTree = "<group>"; };
+		C4D395DA15B1FE320060245F /* status_item_repeat_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_item_repeat_left.png; sourceTree = "<group>"; };
+		C4D395DB15B1FE320060245F /* status_item_repeat_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_item_repeat_right.png; sourceTree = "<group>"; };
+		C4EEBA5A15A0EC8F002CAC52 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		C4EEBA5B15A0EC8F002CAC52 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C477DB3E1580221900E10B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49E46B715BE292B004204E7 /* QuartzCore.framework in Frameworks */,
+				C477DB461580221A00E10B4A /* Cocoa.framework in Frameworks */,
+				C498F1291583C352007628D2 /* Carbon.framework in Frameworks */,
+				C48AD84D15CA1B8B00B114BC /* ShortcutRecorder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C477DB5E1580221A00E10B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C477DB641580221A00E10B4A /* SenTestingKit.framework in Frameworks */,
+				C477DB651580221A00E10B4A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4732A4F15826DF3005565CC /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C48AD84B15CA1AB800B114BC /* ShortcutRecorder.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		C477DB361580221900E10B4A = {
+			isa = PBXGroup;
+			children = (
+				C477DB4B1580221A00E10B4A /* RoboClick */,
+				C477DB681580221A00E10B4A /* RoboClickTests */,
+				C477DB441580221A00E10B4A /* Frameworks */,
+				C477DB421580221A00E10B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C477DB421580221A00E10B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C477DB411580221A00E10B4A /* RoboClick.app */,
+				C477DB621580221A00E10B4A /* RoboClickTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C477DB441580221A00E10B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4732A4F15826DF3005565CC /* Linked Frameworks */,
+				C49E46B615BE292A004204E7 /* QuartzCore.framework */,
+				C498F1281583C352007628D2 /* Carbon.framework */,
+				C477DB451580221A00E10B4A /* Cocoa.framework */,
+				C477DB631580221A00E10B4A /* SenTestingKit.framework */,
+				C477DB471580221A00E10B4A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C477DB471580221A00E10B4A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C477DB481580221A00E10B4A /* AppKit.framework */,
+				C477DB491580221A00E10B4A /* CoreData.framework */,
+				C477DB4A1580221A00E10B4A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C477DB4B1580221A00E10B4A /* RoboClick */ = {
+			isa = PBXGroup;
+			children = (
+				C48AD83C15CA144C00B114BC /* RoboClick.entitlements */,
+				C477DB571580221A00E10B4A /* AppDelegate.h */,
+				C477DB581580221A00E10B4A /* AppDelegate.m */,
+				C4928377159F34DF00484DB7 /* Click.h */,
+				C4928378159F34DF00484DB7 /* Click.m */,
+				C4B1F18215BAEF88009F039F /* ProcessInfo.h */,
+				C4B1F18315BAEF88009F039F /* ProcessInfo.m */,
+				C4928384159F54FC00484DB7 /* DLog.h */,
+				C41D524715BB587100FEB329 /* ClickIndicatorWindow.h */,
+				C41D524815BB587100FEB329 /* ClickIndicatorWindow.m */,
+				C4EEBA5A15A0EC8F002CAC52 /* StatusItemView.h */,
+				C4EEBA5B15A0EC8F002CAC52 /* StatusItemView.m */,
+				C49E46B215BE1E87004204E7 /* ClickIndicatorView.h */,
+				C49E46B315BE1E87004204E7 /* ClickIndicatorView.m */,
+				C477DB5A1580221A00E10B4A /* MainMenu.xib */,
+				C498F11A1583C05B007628D2 /* SGHotKeysLib */,
+				C477DB4C1580221A00E10B4A /* Supporting Files */,
+			);
+			path = RoboClick;
+			sourceTree = "<group>";
+		};
+		C477DB4C1580221A00E10B4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4D395D615B1FE320060245F /* StatusItemIcons */,
+				C492837C159F36CC00484DB7 /* roboclick_on.icns */,
+				C477DB4D1580221A00E10B4A /* RoboClick-Info.plist */,
+				C477DB4E1580221A00E10B4A /* InfoPlist.strings */,
+				C477DB511580221A00E10B4A /* main.m */,
+				C477DB531580221A00E10B4A /* RoboClick-Prefix.pch */,
+				C477DB541580221A00E10B4A /* Credits.rtf */,
+				C41D524B15BB6E9900FEB329 /* dot.gif */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C477DB681580221A00E10B4A /* RoboClickTests */ = {
+			isa = PBXGroup;
+			children = (
+				C477DB6E1580221A00E10B4A /* RoboClickTests.h */,
+				C477DB6F1580221A00E10B4A /* RoboClickTests.m */,
+				C477DB691580221A00E10B4A /* Supporting Files */,
+			);
+			path = RoboClickTests;
+			sourceTree = "<group>";
+		};
+		C477DB691580221A00E10B4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C477DB6A1580221A00E10B4A /* RoboClickTests-Info.plist */,
+				C477DB6B1580221A00E10B4A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C498F11A1583C05B007628D2 /* SGHotKeysLib */ = {
+			isa = PBXGroup;
+			children = (
+				C498F12A1583CBFA007628D2 /* SGKeyCodes.plist */,
+				C498F11B1583C05B007628D2 /* SGHotKey.h */,
+				C498F11C1583C05B007628D2 /* SGHotKey.m */,
+				C498F11D1583C05B007628D2 /* SGHotKeyCenter.h */,
+				C498F11E1583C05B007628D2 /* SGHotKeyCenter.m */,
+				C498F11F1583C05B007628D2 /* SGKeyCodeTranslator.h */,
+				C498F1201583C05B007628D2 /* SGKeyCodeTranslator.m */,
+				C498F1211583C05B007628D2 /* SGKeyCombo.h */,
+				C498F1221583C05B007628D2 /* SGKeyCombo.m */,
+			);
+			path = SGHotKeysLib;
+			sourceTree = "<group>";
+		};
+		C4D395D615B1FE320060245F /* StatusItemIcons */ = {
+			isa = PBXGroup;
+			children = (
+				C4D395D715B1FE320060245F /* status_item_hold_left.png */,
+				C4D395D815B1FE320060245F /* status_item_hold_right.png */,
+				C4D395D915B1FE320060245F /* status_item_normal.png */,
+				C4D395DA15B1FE320060245F /* status_item_repeat_left.png */,
+				C4D395DB15B1FE320060245F /* status_item_repeat_right.png */,
+			);
+			path = StatusItemIcons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C477DB401580221900E10B4A /* RoboClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C477DB731580221A00E10B4A /* Build configuration list for PBXNativeTarget "RoboClick" */;
+			buildPhases = (
+				C477DB3D1580221900E10B4A /* Sources */,
+				C477DB3E1580221900E10B4A /* Frameworks */,
+				C477DB3F1580221900E10B4A /* Resources */,
+				C4BB5E8F15897BE600ACAD8E /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoboClick;
+			productName = RoboClick;
+			productReference = C477DB411580221A00E10B4A /* RoboClick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C477DB611580221A00E10B4A /* RoboClickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C477DB761580221A00E10B4A /* Build configuration list for PBXNativeTarget "RoboClickTests" */;
+			buildPhases = (
+				C477DB5D1580221A00E10B4A /* Sources */,
+				C477DB5E1580221A00E10B4A /* Frameworks */,
+				C477DB5F1580221A00E10B4A /* Resources */,
+				C477DB601580221A00E10B4A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C477DB671580221A00E10B4A /* PBXTargetDependency */,
+			);
+			name = RoboClickTests;
+			productName = RoboClickTests;
+			productReference = C477DB621580221A00E10B4A /* RoboClickTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C477DB381580221900E10B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bryan Germann";
+			};
+			buildConfigurationList = C477DB3B1580221900E10B4A /* Build configuration list for PBXProject "RoboClick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C477DB361580221900E10B4A;
+			productRefGroup = C477DB421580221A00E10B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C477DB401580221900E10B4A /* RoboClick */,
+				C477DB611580221A00E10B4A /* RoboClickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C477DB3F1580221900E10B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C477DB501580221A00E10B4A /* InfoPlist.strings in Resources */,
+				C477DB561580221A00E10B4A /* Credits.rtf in Resources */,
+				C477DB5C1580221A00E10B4A /* MainMenu.xib in Resources */,
+				C498F12C1583CBFA007628D2 /* SGKeyCodes.plist in Resources */,
+				C492837E159F36CC00484DB7 /* roboclick_on.icns in Resources */,
+				C4D395DC15B1FE320060245F /* status_item_hold_left.png in Resources */,
+				C4D395DD15B1FE320060245F /* status_item_hold_right.png in Resources */,
+				C4D395DE15B1FE320060245F /* status_item_normal.png in Resources */,
+				C4D395DF15B1FE320060245F /* status_item_repeat_left.png in Resources */,
+				C4D395E015B1FE320060245F /* status_item_repeat_right.png in Resources */,
+				C41D524C15BB6E9900FEB329 /* dot.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C477DB5F1580221A00E10B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C477DB6D1580221A00E10B4A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C477DB601580221A00E10B4A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C477DB3D1580221900E10B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C477DB521580221A00E10B4A /* main.m in Sources */,
+				C477DB591580221A00E10B4A /* AppDelegate.m in Sources */,
+				C498F1231583C05B007628D2 /* SGHotKey.m in Sources */,
+				C498F1241583C05B007628D2 /* SGHotKeyCenter.m in Sources */,
+				C498F1251583C05B007628D2 /* SGKeyCodeTranslator.m in Sources */,
+				C498F1261583C05B007628D2 /* SGKeyCombo.m in Sources */,
+				C4928379159F34DF00484DB7 /* Click.m in Sources */,
+				C4EEBA5C15A0EC8F002CAC52 /* StatusItemView.m in Sources */,
+				C4B1F18415BAEF88009F039F /* ProcessInfo.m in Sources */,
+				C41D524915BB587100FEB329 /* ClickIndicatorWindow.m in Sources */,
+				C49E46B415BE1E87004204E7 /* ClickIndicatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C477DB5D1580221A00E10B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C477DB701580221A00E10B4A /* RoboClickTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C477DB671580221A00E10B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C477DB401580221900E10B4A /* RoboClick */;
+			targetProxy = C477DB661580221A00E10B4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C477DB4E1580221A00E10B4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C477DB4F1580221A00E10B4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C477DB541580221A00E10B4A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C477DB551580221A00E10B4A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C477DB5A1580221A00E10B4A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C477DB5B1580221A00E10B4A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C477DB6B1580221A00E10B4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C477DB6C1580221A00E10B4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C498F12A1583CBFA007628D2 /* SGKeyCodes.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C498F12B1583CBFA007628D2 /* en */,
+			);
+			name = SGKeyCodes.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C477DB711580221A00E10B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C477DB721580221A00E10B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C477DB741580221A00E10B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoboClick/RoboClick-Prefix.pch";
+				INFOPLIST_FILE = "RoboClick/RoboClick-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = RoboClick;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C477DB751580221A00E10B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoboClick/RoboClick-Prefix.pch";
+				INFOPLIST_FILE = "RoboClick/RoboClick-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = RoboClick;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C477DB771580221A00E10B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoboClick.app/Contents/MacOS/RoboClick";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoboClick/RoboClick-Prefix.pch";
+				INFOPLIST_FILE = "RoboClickTests/RoboClickTests-Info.plist";
+				PRODUCT_NAME = RoboClickTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C477DB781580221A00E10B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoboClick.app/Contents/MacOS/RoboClick";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoboClick/RoboClick-Prefix.pch";
+				INFOPLIST_FILE = "RoboClickTests/RoboClickTests-Info.plist";
+				PRODUCT_NAME = RoboClickTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C477DB3B1580221900E10B4A /* Build configuration list for PBXProject "RoboClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C477DB711580221A00E10B4A /* Debug */,
+				C477DB721580221A00E10B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C477DB731580221A00E10B4A /* Build configuration list for PBXNativeTarget "RoboClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C477DB741580221A00E10B4A /* Debug */,
+				C477DB751580221A00E10B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C477DB761580221A00E10B4A /* Build configuration list for PBXNativeTarget "RoboClickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C477DB771580221A00E10B4A /* Debug */,
+				C477DB781580221A00E10B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C477DB381580221900E10B4A /* Project object */;
+}
