@@ -34,6 +34,7 @@ Preferences:
 ## License ##
 
 Copyright (c) 2012 Bryan Germann
+
 RoboClick is licensed under the MIT License (see LICENSE.txt).
 
 This code uses the [shortcutrecorder](http://code.google.com/p/shortcutrecorder/),
