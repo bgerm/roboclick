@@ -1,5 +1,7 @@
 # RoboClick #
 
+![RoboClick](http://i.imgur.com/IcHQCWQ.png)
+
 ## About RoboClick ##
 
 RoboClick is an auto-clicking app that sits in your Mac OS X menubar so it
@@ -18,6 +20,15 @@ of the code is stuffed into the AppDelegate.
   application by pid (process ID).
 - Sits in your menubar
 - Click indicators to see where you're clicking (optional)
+
+## Screenshots ##
+
+In menu (with "keep repeat clicks to one application" enabled):
+![With pid locking](http://i.imgur.com/ujpmRjC.png)
+
+Preferences:
+
+![Preferences](http://i.imgur.com/AtVSHuC.png)
 
 ## License ##
 
